@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    >
+    <ImageView
+        android:id="@+id/imv_coin_icon"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/btc_1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/imv_coin_icon"
+        android:padding="@dimen/_5sdp"
+        >
+
+        <TextView
+            android:id="@+id/tv_coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:text="Coin Name"
+            android:textAppearance="@style/Widget.AppCompat.ActionBar.Solid"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tv_coin_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Symbol"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toStartOf="@id/tv_price_change"
+        android:padding="@dimen/_2sdp"
+        >
+
+        <TextView
+            android:id="@+id/tv_coin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:text="0.0000"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_price_change"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorGrayLight"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="0.00%"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>
