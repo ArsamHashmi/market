@@ -7,7 +7,9 @@ crypto market tracker: Based on requirements provided in document.
 - Graph Activity :  Activity Contains candle chart which reflects real market values instead of picking randomly generated values 
                     from previous screen.
                     All values are picked by consuming coinmarketcap API (using Retrofit)
-                    
+
+Don't forget to add API key in interfaces section                   
+
 TODOs:
 - Working on Activity Lifecycles
 - Service to update values in real-time
